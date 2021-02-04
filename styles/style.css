@@ -318,3 +318,13 @@
     width: 2px;
     background-color: #FFAD01;
 }
+
+.try-end{
+    padding-top: 150px;
+    padding-bottom: 110px;
+    margin-bottom: 0;
+}
+
+.try-orange{
+    color: #F16000;
+}
