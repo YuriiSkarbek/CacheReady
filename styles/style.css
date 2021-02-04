@@ -132,3 +132,7 @@
     color: #FFFFFF;
     margin-right: 80px;
 }
+
+.Typewriter__cursor{
+    font-weight: 100;
+}
