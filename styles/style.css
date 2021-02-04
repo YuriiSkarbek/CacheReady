@@ -1,0 +1,134 @@
+*{
+    font-family: Gilroy, sans-serif;
+}
+
+.body{
+    padding: 0;
+    margin: 0;
+}
+
+.container,
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container{
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container{
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container{
+    max-width: 1140px;
+  }
+}
+
+
+.header{
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo{
+    width: auto;
+    height: 26px;
+}
+
+.main-nav{
+
+}
+
+.main-nav__link{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1E1E20;
+    text-decoration: none;
+    padding: 0 26px;
+    transition: .4s;;
+}
+
+.main-nav__link--active{
+    color: #F16000;
+}
+
+.main-nav__link:hover{
+    color: #F16000;
+}
+
+.intro{
+    height: 95vh;
+    height: calc(100vh - 85px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-title{
+    font-weight: 800;
+    font-size: 68px;
+    line-height: 112%;
+    text-align: center;
+    color: #1E1E20;
+    margin-bottom: 18px;
+}
+
+.intro-title__typing{
+    color: #F16000;
+}
+
+.intro-desc{
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #1E1E20;
+    width: 35%;
+    margin: 0 auto;
+    margin-bottom: 56px;
+}
+
+.btn{
+    padding: 16px 32px;
+    background-color: #F16000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+    transition: .4s;
+    margin: 0 auto;
+}
+
+.btn:hover{
+    transform: scale(1.03, 1.03);
+}
+
+.btn-text{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-right: 80px;
+}
