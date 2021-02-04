@@ -23,3 +23,4 @@ typewriter
   .typeString('inner ;)')
   .pauseFor(1200)
   .start();
+
