@@ -417,3 +417,173 @@
 .review .slick-arrows:hover{
     transform: translate(0, -50%) scale(1.07, 1.07);
 }
+
+.pricing-card{
+    background: #FFFFFF;
+    box-shadow: 0px 18px 28px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card__header{
+    width: 100%;
+    height: 65px;
+    background-image: url('/assets/images/pricing-header.svg');
+    background-position: center 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 48px;
+    opacity: .4;
+    transition: .4s;
+}
+
+.pricing-title{
+    position: relative;
+    margin: 0 auto;
+    width: fit-content;
+    margin-bottom: 60px;
+}
+
+.pricing-title__text{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: #1E1E20;
+}
+
+.pricing-ball{
+    top: -8px;
+    left: -30px;
+}
+
+.pricing-cards{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.pricing-card{
+    width: 30%;
+    position: relative;
+}
+
+.pricing-card__title{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    width: 100%;
+    position: absolute;
+    top: 18px;
+}
+
+.pricing-card__button.btn{
+    width: 100%;
+    box-sizing: border-box;
+    color: #000;
+    background-color: #E3E2E2;
+}
+
+.pricing-card__button .btn-text{
+    color: inherit;
+}
+
+.pricing-card__button .btn-arrow{
+    filter: invert(100%);
+}
+
+.pricing-card__button:hover{
+    transform: scale(1, 1);
+}
+
+.pricing-card__price{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.pricing-card__price-currency{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 110%;
+    text-align: center;
+    color: #1E1E20;
+}
+.pricing-card__price-value{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 90%;
+    text-align: center;
+    color: #1E1E20;
+}
+
+.pricing-card__price-term{
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    color: #1E1E20;
+    opacity: 0.44;
+    display: flex;
+    align-items: flex-end;
+}
+
+.pricing-card__list{
+    width: 80%;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 40px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.pricing-card__list-item{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 130%;
+    color: #1E1E20;
+    margin-bottom: 10px;
+    position: relative;
+    
+}
+
+.pricing-card__list-item--tick::before{
+    content: url('/assets/images/pricing-tick.svg');
+    width: 10px;
+    height: auto;
+    position: absolute;
+    left: -20px;
+}
+
+.pricing-card__list-item--minus::before{
+    content: url('/assets/images/pricing-minus.svg');
+    width: 10px;
+    height: auto;
+    position: absolute;
+    left: -20px;
+    top: -3px;
+    display: flex;
+    align-items: center;
+}
+
+.pricing-card.active .pricing-card__header{
+    opacity: 1;
+}
+
+.pricing-card.active .pricing-card__button{
+    color: #fff;
+    background-color: #F16000;
+}
+
+.pricing-card.active .pricing-card__button .btn-arrow{
+    filter: invert(0%);
+}
+
+.pricing-slider__desc{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
