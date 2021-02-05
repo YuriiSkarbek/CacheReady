@@ -596,6 +596,8 @@
 .footer-inner{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 85px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.17);
 }
 
 .footer-col__logo{
@@ -611,5 +613,53 @@
 .footer-col__contact{
     width: 35%;
     color: #fff;
+    text-align: right;
+}
 
+.footer-link{
+    display: block;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 130%;
+    color: #F9F8F8;
+    text-decoration: none;
+    margin-bottom: 14px;
+}
+
+.footer-col__links-first .footer-link{
+    font-weight: bold;
+}
+
+.footer-col__links-second .footer-link{
+    font-weight: normal;
+}
+
+.footer-copyright{
+    height: 88px;
+}
+
+.footer-copyright__crayfish, .footer-copyright__info, .footer-copyright__crayfish a {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 200%;
+    text-align: right;
+    color: #818181;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.footer-copyright__crayfish a{
+    display: inline;
+}
+
+.footer-copyright__crayfish a:hover{
+    color: #F16000;
+}
+
+.footer-copyright{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
