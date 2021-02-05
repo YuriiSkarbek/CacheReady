@@ -24,8 +24,11 @@ typewriter
   .pauseFor(1200)
   .start();
 
-  $('.review').slick({
-    arrows: true,
-    prevArrow: '<div class="slick-prev slick-arrows"> <img src="assets/images/slider-arrow-left.svg" alt="<"> </div>',
-    nextArrow: '<div class="slick-next slick-arrows"> <img src="assets/images/slider-arrow-right.svg" alt=">"> </div> ',
-  });
+  window.onload = function(){
+    $('.review').slick({
+      arrows: true,
+      prevArrow: '<div class="slick-prev slick-arrows"> <img src="assets/images/slider-arrow-left.svg" alt="<"> </div>',
+      nextArrow: '<div class="slick-next slick-arrows"> <img src="assets/images/slider-arrow-right.svg" alt=">"> </div> ',
+    });
+  };
+  
