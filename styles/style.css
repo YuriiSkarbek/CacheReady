@@ -328,3 +328,92 @@
 .try-orange{
     color: #F16000;
 }
+
+.review-container-fluid{
+    height: 500px;
+    width: 100%;
+    background-image: url('/assets/images/bg-review.png');
+    background-position: center 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 175px;
+}
+
+.review{
+ position: relative;
+ width: 90%;
+ width: calc(100% - 80px);
+ margin: 0 auto;
+}
+
+.review-item{
+    width: 100%;
+}
+
+.review-inner{
+    position: relative;
+    padding-left: 100px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.review-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.review-text{
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 122%;
+    margin-bottom: 48px;
+}
+
+.review-text--white{
+    color: #fff;
+}
+
+.review-name{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 110%;
+    color: #1E1E20;
+    margin-bottom: 8px;
+}
+
+.review-position{
+    font-size: 14px;
+    line-height: 130%;
+    color: #1E1E20;
+}
+
+.slick-slide{
+    outline: none !important;
+}
+
+.review .slick-arrows{
+    transform: translate(0, -50%);
+    z-index: 500;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transition: .4s;
+}
+
+.review .slick-prev{
+    float: left;
+    left: -40px;
+}
+
+.review .slick-next{
+    float: right;
+    right: -40px;
+}
+
+.review .slick-arrows:hover{
+    transform: translate(0, -50%) scale(1.07, 1.07);
+}
