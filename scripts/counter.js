@@ -244,12 +244,6 @@ const options = {
     separator: ' ',
 };
 let counter = new CountUp('counter', 1890789, options);
-if (!counter.error) {
-    counter.start();
-} else {
-    console.error(counter.error);
-}
-
 
 const optionsVal1 = {
     decimalPlaces: 1,
@@ -258,11 +252,6 @@ const optionsVal1 = {
     suffix: 'x',
 };
 let values1 = new CountUp('values1', 3.5, optionsVal1);
-if (!values1.error) {
-    values1.start();
-} else {
-    console.error(values1.error);
-}
 
 const optionsVal2 = {
     decimalPlaces: 1,
@@ -271,11 +260,6 @@ const optionsVal2 = {
     suffix: 'x',
 };
 let values2 = new CountUp('values2', 2.8, optionsVal2);
-if (!values2.error) {
-    values2.start();
-} else {
-    console.error(values2.error);
-}
 
 
 const optionsVal3 = {
@@ -285,9 +269,59 @@ const optionsVal3 = {
     suffix: 'x',
 };
 let values3 = new CountUp('values3', 6.0, optionsVal3);
-if (!values3.error) {
-    values3.start();
-} else {
-    console.error(values3.error);
+
+
+
+let userScreen = $(window).height();
+
+let boxCounter = $('.counter').offset().top + 100;
+let counterDone = false;
+
+let valuesCounter = $('.values').offset().top + 100;
+let valuesDone = false;
+
+
+function startCountersOnScroll(){
+    let userScroll = $(window).scrollTop() + userScreen - 1;
+    if(userScroll >= boxCounter){
+        if(counterDone == false){
+            if (!counter.error) {
+                counter.start();
+                console.log('counter done')
+                counterDone = true;
+            } else {
+                console.error(counter.error);
+            }
+        }
+    }
+
+    if(userScroll >= valuesCounter){
+        if(valuesDone == false){
+            if (!values1.error) {
+                values1.start();
+                console.log('valuew counter 1 done')
+            } else {
+                console.error(values1.error);
+            }
+
+            if (!values2.error) {
+                values2.start();
+            } else {
+                console.error(values2.error);
+            }
+
+            if (!values3.error) {
+                values3.start();
+            } else {
+                console.error(values3.error);
+            }
+            valuesDone = true;
+        }
+    }
 }
 
+startCountersOnScroll();
+
+$(window).scroll(function () {
+    startCountersOnScroll();
+});

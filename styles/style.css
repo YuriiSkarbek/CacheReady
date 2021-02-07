@@ -38,6 +38,12 @@
   }
 }
 
+@media (min-width: 1400px) {
+    .container{
+      max-width: 1320px;
+    }
+  }
+
 
 .header{
     height: 85px;
@@ -139,6 +145,7 @@
     width: 100%;
     height: auto;
     background-image: url('../assets/images/bg-counter.png');
+    background-size: cover;
     background-position: center 0%;
     background-repeat: no-repeat;
     display: flex;
@@ -230,6 +237,7 @@
     height: auto;
     background-image: url('../assets/images/bg-try.png');
     background-position: center 0%;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -330,16 +338,23 @@
 }
 
 .review-container-fluid{
-    height: 500px;
+    height: auto;
     width: 100%;
     background-image: url('../assets/images/bg-review.png');
     background-position: center 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 175px;
+    padding-top: 150px;
+    padding-bottom: 220px;
+}
+
+.review-container-fluid .slick-arrows{
+    padding: 30px 5px;
 }
 
 .review{
@@ -347,6 +362,42 @@
  width: 90%;
  width: calc(100% - 80px);
  margin: 0 auto;
+}
+
+.review-container{
+    position: relative;
+}
+
+.review-container:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    pointer-events: none;
+    background: rgb(255,184,0);
+    background: -moz-linear-gradient(90deg, rgba(255,184,0,1) 44%, rgba(255,184,0,0) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,184,0,1) 44%, rgba(255,184,0,0) 100%);
+    background: linear-gradient(90deg, rgba(255,184,0,1) 44%, rgba(255,184,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffb800",endColorstr="#ffb800",GradientType=1);
+}
+
+.review-container:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 100%;
+    z-index: 100;
+    pointer-events: none;
+    background: rgb(255,184,0);
+background: -moz-linear-gradient(90deg, rgba(255,184,0,0) 0%, rgba(255,184,0,1) 53%);
+background: -webkit-linear-gradient(90deg, rgba(255,184,0,0) 0%, rgba(255,184,0,1) 53%);
+background: linear-gradient(90deg, rgba(255,184,0,0) 0%, rgba(255,184,0,1) 53%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffb800",endColorstr="#ffb800",GradientType=1);
+
 }
 
 .review-item{
@@ -457,7 +508,7 @@
 }
 
 .pricing-card{
-    width: 31%;
+    width: 31.6%;
     position: relative;
     background: #FFFFFF;
     box-shadow: 0px 18px 28px rgba(0, 0, 0, 0.1);
@@ -790,6 +841,10 @@ input[type=range]::-webkit-slider-thumb {
     transform: translateX(3px);
 }
 
+#rangeVal1{
+    transform: translateX(-6px);
+}
+
 
 
 
@@ -872,3 +927,8 @@ input[type=range]::-webkit-slider-thumb {
     justify-content: space-between;
 }
 
+@media (min-width: 1440px){
+    .try-form{
+        width: 40%;
+    }
+}
