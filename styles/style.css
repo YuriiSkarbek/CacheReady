@@ -887,6 +887,11 @@ input[type=range]::-webkit-slider-thumb {
     color: #F9F8F8;
     text-decoration: none;
     margin-bottom: 14px;
+    transition: .4s;
+}
+
+.footer-link:hover{
+    color: #F16000;
 }
 
 .footer-col__links-first .footer-link{
