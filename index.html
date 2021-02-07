@@ -187,7 +187,7 @@
                 <span class="pricing-title__text">Flexible pricing</span>
             </div>
             <div class="pricing-cards">
-                <div class="pricing-card">
+                <div class="pricing-card" id="pricingCard1">
                     <div class="pricing-card__header"></div>
                     <div class="pricing-card__title">
                         Basic
@@ -200,8 +200,6 @@
                     <ul class="pricing-card__list">
                         <li class="pricing-card__list-item pricing-card__list-item--tick">Lorem ipsum dolor sit amet.</li>
                         <li class="pricing-card__list-item pricing-card__list-item--tick">Lorem ipsum dolor sit.</li>
-                        <li class="pricing-card__list-item pricing-card__list-item--tick">Lorem ipsum amet.</li>
-                        <li class="pricing-card__list-item pricing-card__list-item--minus">Lorem ipsum dolor.</li>
                         <li class="pricing-card__list-item pricing-card__list-item--minus">Lorem amet sit amet.</li>
                     </ul>
                     <div class="pricing-card__button btn">
@@ -209,7 +207,7 @@
                         <img src="assets/images/arrow.svg" alt=">" class="btn-arrow">
                     </div>
                 </div>
-                <div class="pricing-card active">
+                <div class="pricing-card active" id="pricingCard2">
                     <div class="pricing-card__header"></div>
                     <div class="pricing-card__title">
                         Bussiness
@@ -231,7 +229,7 @@
                         <img src="assets/images/arrow.svg" alt=">" class="btn-arrow">
                     </div>
                 </div>
-                <div class="pricing-card">
+                <div class="pricing-card" id="pricingCard3">
                     <div class="pricing-card__header"></div>
                     <div class="pricing-card__title">
                         Webmaster
@@ -254,7 +252,17 @@
                     </div>
                 </div>
             </div>
-            <div class="pricing-slider"></div>
+            <div class="pricing-slider x3">
+                <div class="pricing-range__values">
+                    <div class="pricing-range__value" id="rangeVal1">10K</div>
+                    <div class="pricing-range__value" id="rangeVal2">50K</div>
+                    <div class="pricing-range__value" id="rangeVal3">100K</div>
+                    <div class="pricing-range__value" id="rangeVal4">500K</div>
+                    <div class="pricing-range__value" id="rangeVal5">1M</div>
+                    <div class="pricing-range__value" id="rangeVal6">5M+</div>
+                </div>
+                <input type="range" class="pricing-range" value="3" min="1" max="6" step="1" onchange="rangeChange(this.value)" oninput="rangeChange(this.value)">
+            </div>
             <div class="pricing-slider__desc">
                 How many pages you will warm per month?
             </div>
