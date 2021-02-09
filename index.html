@@ -10,6 +10,45 @@
     <link rel="shortcut icon" href="assets/images/favicon/favicon.png" type="image/png">
 </head>
 <body class="body">
+    <div class="mobile-menu">
+        <div class="container">
+            <div class="mobile-menu__header">
+                <img src="assets/images/logo-white.svg" alt="CacheReady white logo" class="mobile-menu__logo">
+            </div>
+
+            <div class="mobile-menu__list">
+                <a href="#features" class="mobile-menu__link">
+                    <div class="mobile-menu__link-text">Features</div>
+                    <div class="mobile-menu__link-icon"><img src="assets/images/arrow-white.svg" alt=">" class="mobile-menu__link-arrow"></div>
+                </a>
+
+                <div class="mobile-menu__sub-links">
+                    <a href="#" class="mobile-menu__sub-link">Easy to use</a>
+                    <a href="#" class="mobile-menu__sub-link">Real time</a>
+                    <a href="#" class="mobile-menu__sub-link">Continious integration</a>
+                </div>
+
+                <a href="#reviews" class="mobile-menu__link">
+                    <div class="mobile-menu__link-text">Reviews</div>
+                    <div class="mobile-menu__link-icon"><img src="assets/images/arrow-white.svg" alt=">" class="mobile-menu__link-arrow"></div>
+                </a>
+                <a href="#pricing" class="mobile-menu__link">
+                    <div class="mobile-menu__link-text">Pricing</div>
+                    <div class="mobile-menu__link-icon"><img src="assets/images/arrow-white.svg" alt=">" class="mobile-menu__link-arrow"></div>
+                </a>
+            </div>
+            <div class="mobile-menu__btn">
+                <div class="btn">
+                    <div class="btn-text">Get started</div>
+                    <img src="assets/images/arrow.svg" alt=">" class="btn-arrow">
+                </div>
+            </div>
+            <div class="mobile-menu__sing-in">
+                <a href="#" target="_blank" class="main-nav__link">Log in</a>
+                <a href="#" target="_blank" class="main-nav__link main-nav__link--active">Sign in</a>
+            </div>
+        </div>
+    </div>
     <header class="header container">
         <div class="header-logo">
             <img src="assets/images/logo.svg" alt="CacheReady logo">
@@ -23,12 +62,13 @@
             <a href="#" target="_blank" class="main-nav__link">Log in</a>
             <a href="#" target="_blank" class="main-nav__link main-nav__link--active">Sign in</a>
         </div>
+        <button class="burger" onclick="toggleMobileMenu();"></button>
     </header>
 
     <div class="container">
         <div class="intro">
             <div class="intro-title">
-                Keep your <span id="intro-typing" class="intro-title__typing">WordPress</span> <br>
+                Keep your <br class="intro-title__br"> <span id="intro-typing" class="intro-title__typing">WordPress</span> <br>
                 cache warm
             </div>
             <div class="intro-desc">
@@ -52,7 +92,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="features">
         <div class="tutor">
             <div class="tutor-info">
                 <div class="ball tutor-ball"></div>
@@ -116,7 +156,7 @@
         </div>
     </div>
 
-    <div class="container-fluid review-container-fluid">
+    <div class="container-fluid review-container-fluid" id="reviews">
         <div class="container review-container">
             <div class="review">
                 <div class="review-item">
@@ -180,7 +220,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container-pricing" id="pricing">
         <div class="pricing">
             <div class="pricing-title">
                 <div class="ball pricing-ball"></div>
@@ -294,9 +334,9 @@
                     <img src="assets/images/logo-white.svg" alt="Chache Ready white logo">
                 </div>
                 <div class="footer-col__links footer-col__links-first">
-                    <a href="#" class="footer-link">Features</a>
-                    <a href="#" class="footer-link">Reviews</a>
-                    <a href="#" class="footer-link">Pricing</a>
+                    <a href="#features" class="footer-link">Features</a>
+                    <a href="#reviews" class="footer-link">Reviews</a>
+                    <a href="#pricing" class="footer-link">Pricing</a>
                 </div>
                 <div class="footer-col__links footer-col__links-second">
                     <a href="#" class="footer-link">Privacy policy</a>

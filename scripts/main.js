@@ -9,19 +9,19 @@ var typewriter = new Typewriter(app, {
 typewriter
   .pauseFor(500)
   .typeString('Drupal')
-  .pauseFor(800)
+  .pauseFor(1200)
   .deleteChars(6)
   .typeString('WordPress')
-  .pauseFor(800)
+  .pauseFor(1200)
   .deleteChars(9)
   .typeString('Magento')
-  .pauseFor(800)
+  .pauseFor(1200)
   .deleteChars(7)
   .typeString('Varnish')
-  .pauseFor(800)
+  .pauseFor(1200)
   .deleteChars(7)
   .typeString('inner ;)')
-  .pauseFor(1200)
+  .pauseFor(2000)
   .start();
 
   window.onload = function(){
@@ -48,7 +48,6 @@ typewriter
       if(i != val){
         $('#rangeVal'+i).css('font-weight', 'normal');
       } else {
-        console.log('Cuurent is: ', i);
         if(i == 1 || i == 2){
           $('.pricing-card').removeClass('active');
           $('#pricingCard1').addClass('active');
@@ -69,7 +68,26 @@ typewriter
   }
 
   function rangeChangeBackground(val){
-    console.log('val: ', val);
     $('.pricing-slider').removeClass('x1 x2 x3 x4 x5 x6')
     $('.pricing-slider').addClass('x'+val);
   }
+
+  let isMenuOpened = false; 
+  function toggleMobileMenu(){
+    if(isMenuOpened == false){
+      $('.burger').addClass('active');
+      $('.mobile-menu').addClass('active');
+      $('.body').addClass('scroll-lock');
+      isMenuOpened = true;
+    } else {
+      $('.burger').removeClass('active');
+      $('.mobile-menu').removeClass('active');
+      $('.body').removeClass('scroll-lock');
+      isMenuOpened = false;
+    }
+  }
+  $('.mobile-menu__link').click(function(){toggleMobileMenu()});
+  $('.mobile-menu__sub-link').click(function(){toggleMobileMenu()});
+  $('.mobile-menu .main-nav__link').click(function(){toggleMobileMenu()});
+  $('.mobile-menu .btn').click(function(){toggleMobileMenu()});
+

@@ -247,26 +247,26 @@ let counter = new CountUp('counter', 1890789, options);
 
 const optionsVal1 = {
     decimalPlaces: 1,
-    duration: 2.5,
+    duration: 1.7,
     separator: ' ',
-    suffix: 'x',
+    suffix: '<span class="values-num__x">x</span>',
 };
 let values1 = new CountUp('values1', 3.5, optionsVal1);
 
 const optionsVal2 = {
     decimalPlaces: 1,
-    duration: 1.0,
+    duration: 1.2,
     separator: ' ',
-    suffix: 'x',
+    suffix: '<span class="values-num__x">x</span>',
 };
 let values2 = new CountUp('values2', 2.8, optionsVal2);
 
 
 const optionsVal3 = {
     decimalPlaces: 1,
-    duration: 4.0,
+    duration: 2.5,
     separator: ' ',
-    suffix: 'x',
+    suffix: '<span class="values-num__x">x</span>',
 };
 let values3 = new CountUp('values3', 6.0, optionsVal3);
 
@@ -287,7 +287,6 @@ function startCountersOnScroll(){
         if(counterDone == false){
             if (!counter.error) {
                 counter.start();
-                console.log('counter done')
                 counterDone = true;
             } else {
                 console.error(counter.error);
@@ -299,7 +298,6 @@ function startCountersOnScroll(){
         if(valuesDone == false){
             if (!values1.error) {
                 values1.start();
-                console.log('valuew counter 1 done')
             } else {
                 console.error(values1.error);
             }
