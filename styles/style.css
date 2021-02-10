@@ -1334,9 +1334,16 @@ input::-moz-range-track {
 
 @media (max-width: 768px){
     .container-pricing{
-        /* padding-left: 40px; */
         width: 100%;
-        
+    }
+
+    #pricingCard3::before{
+        content: "";
+        display: block;
+        position: absolute;
+        right: -40px;
+        width: 40px;
+        height: 1px;
     }
 
     .pricing-cards{
@@ -1344,7 +1351,6 @@ input::-moz-range-track {
         justify-content: flex-start;
         overflow-x: auto;
         padding-left: 40px;
-        /* padding-right: 40px; */
         box-sizing: border-box;
         padding-bottom: 30px;
         margin-bottom: 20px;

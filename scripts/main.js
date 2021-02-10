@@ -37,8 +37,20 @@ typewriter
   function rangeChange(val){
     rangeChangePricing(val);
     rangeChangeBackground(val);
+    rangeChangeScroll(val);
   }
 
+  let pricingCard1Position
+  let pricingCard2Position
+  let pricingCard3Position
+
+  if($(window).width() < 768){
+    pricingCard1Position = $('#pricingCard1').position().left - 40;
+    pricingCard2Position = $('#pricingCard2').position().left - 40;
+    pricingCard3Position = $('#pricingCard3').position().left - 40;
+    $('.pricing-cards').scrollLeft( pricingCard2Position );
+
+  }
   function rangeChangePricing(val){
     // make bold current value 
     $('#rangeVal'+val).css('font-weight', 'bold');
@@ -51,16 +63,25 @@ typewriter
         if(i == 1 || i == 2){
           $('.pricing-card').removeClass('active');
           $('#pricingCard1').addClass('active');
+          if($(window).width() < 768){
+            $('.pricing-cards').scrollLeft( pricingCard1Position );
+          }
         }
 
         if(i == 3 || i == 4){
           $('.pricing-card').removeClass('active');
           $('#pricingCard2').addClass('active');
+          if($(window).width() < 768){
+            $('.pricing-cards').scrollLeft( pricingCard2Position );
+          }
         }
 
         if(i == 5 || i == 6){
           $('.pricing-card').removeClass('active');
           $('#pricingCard3').addClass('active');
+          if($(window).width() < 768){
+            $('.pricing-cards').scrollLeft( pricingCard3Position );
+          }
         }
         
       }
@@ -71,6 +92,11 @@ typewriter
     $('.pricing-slider').removeClass('x1 x2 x3 x4 x5 x6')
     $('.pricing-slider').addClass('x'+val);
   }
+
+  function rangeChangeScroll(val){
+    console.log('val new: ', val);
+    
+    }
 
   let isMenuOpened = false; 
   function toggleMobileMenu(){
