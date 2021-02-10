@@ -1219,7 +1219,7 @@ input::-moz-range-track {
 
 @media (max-width: 992px) {
     .burger{
-        display: none;
+        display: flex;
     }
     .main-nav {
         display: none;
