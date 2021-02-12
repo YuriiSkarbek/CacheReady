@@ -117,3 +117,9 @@ typewriter
   $('.mobile-menu .main-nav__link').click(function(){toggleMobileMenu()});
   $('.mobile-menu .btn').click(function(){toggleMobileMenu()});
 
+$('.pricing-range__value').click(function(){
+ let currentId = $(this).attr('id');
+ let currentNum = currentId.slice(currentId.length -1);
+ $(".pricing-range").val(currentNum);
+ rangeChange(currentNum);
+})

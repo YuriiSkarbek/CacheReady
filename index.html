@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cache Ready</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="assets/fonts/fonts.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="shortcut icon" href="assets/images/favicon/favicon.png" type="image/png">
 </head>
+
 <body class="body">
     <div class="mobile-menu">
         <div class="container">
@@ -19,7 +21,8 @@
             <div class="mobile-menu__list">
                 <a href="#features" class="mobile-menu__link">
                     <div class="mobile-menu__link-text">Features</div>
-                    <div class="mobile-menu__link-icon"><img src="assets/images/arrow-white.svg" alt=">" class="mobile-menu__link-arrow"></div>
+                    <div class="mobile-menu__link-icon"><img src="assets/images/arrow-white.svg" alt=">"
+                            class="mobile-menu__link-arrow"></div>
                 </a>
 
                 <div class="mobile-menu__sub-links">
@@ -30,11 +33,13 @@
 
                 <a href="#reviews" class="mobile-menu__link">
                     <div class="mobile-menu__link-text">Reviews</div>
-                    <div class="mobile-menu__link-icon"><img src="assets/images/arrow-white.svg" alt=">" class="mobile-menu__link-arrow"></div>
+                    <div class="mobile-menu__link-icon"><img src="assets/images/arrow-white.svg" alt=">"
+                            class="mobile-menu__link-arrow"></div>
                 </a>
                 <a href="#pricing" class="mobile-menu__link">
                     <div class="mobile-menu__link-text">Pricing</div>
-                    <div class="mobile-menu__link-icon"><img src="assets/images/arrow-white.svg" alt=">" class="mobile-menu__link-arrow"></div>
+                    <div class="mobile-menu__link-icon"><img src="assets/images/arrow-white.svg" alt=">"
+                            class="mobile-menu__link-arrow"></div>
                 </a>
             </div>
             <div class="mobile-menu__btn">
@@ -65,10 +70,13 @@
         <button class="burger" onclick="toggleMobileMenu();"></button>
     </header>
 
+
     <div class="container">
+        <img src="assets/images/bg-circle__banner.png" alt="bg" class="bg-circle bg-circle__banner pulsingAnim">
         <div class="intro">
             <div class="intro-title">
-                Keep your <br class="intro-title__br"> <span id="intro-typing" class="intro-title__typing">WordPress</span> <br>
+                Keep your <br class="intro-title__br"> <span id="intro-typing"
+                    class="intro-title__typing">WordPress</span> <br>
                 cache warm
             </div>
             <div class="intro-desc">
@@ -91,32 +99,74 @@
             </div>
         </div>
     </div>
-
-    <div class="container" id="features">
-        <div class="tutor">
-            <div class="tutor-info">
-                <div class="ball tutor-ball"></div>
-                <div class="tutor-title">
-                    Real time
+    <div class="container-fluid">
+        <img src="assets/images/bg-circle__features.png" alt="bg" class="bg-circle bg-circle__features pulsingAnim">
+        <div class="container" id="features">
+            <div class="tutor">
+                <div class="tutor-info">
+                    <div class="ball tutor-ball"></div>
+                    <div class="tutor-title">
+                        Easy to use
+                    </div>
+                    <div class="tutor-desc tutor-desc--bold">
+                        It takes less than a minute to add a site and start warming cache.
+                    </div>
+                    <div class="tutor-desc">
+                        You can either start the process manually, setup a cron job and schedule it or use webhooks as a
+                        part of deployment process.
+                    </div>
                 </div>
-                <div class="tutor-desc tutor-desc--bold">
-                    Monitor the progress in real time.
-                </div>
-                <div class="tutor-desc">
-                    You can pause, re-start and terminate the process at any time. Looking for a specific page? Or the slowest page?
+                <div class="tutor-animation">
+                    <img src="assets/images/anim1.png" alt="animation">
                 </div>
             </div>
-            <div class="tutor-animation">
-                <img src="assets/images/anim1.png" alt="animation">
+            <div class="tutor">
+                <div class="tutor-info">
+                    <div class="ball tutor-ball"></div>
+                    <div class="tutor-title">
+                        Real time
+                    </div>
+                    <div class="tutor-desc tutor-desc--bold">
+                        Monitor the progress in real time.
+                    </div>
+                    <div class="tutor-desc">
+                        You can pause, re-start and terminate the process at any time. Looking for a specific page? Or
+                        the
+                        slowest page?
+                    </div>
+                </div>
+                <div class="tutor-animation">
+                    <img src="assets/images/anim2.png" alt="animation">
+                </div>
+            </div>
+            <div class="tutor">
+                <div class="tutor-info">
+                    <div class="ball tutor-ball"></div>
+                    <div class="tutor-title">
+                        Continious integration
+                    </div>
+                    <div class="tutor-desc tutor-desc--bold">
+                        Monitor the progress in real time.
+                    </div>
+                    <div class="tutor-desc">
+                        You can pause, re-start and terminate the process at any time. Looking for a specific page? Or
+                        the
+                        slowest page?
+                    </div>
+                </div>
+                <div class="tutor-animation">
+                    <img src="assets/images/anim3.png" alt="animation">
+                </div>
             </div>
         </div>
     </div>
+
 
     <div class="container-fluid">
         <div class="try">
             <div class="try-title">
                 <div class="ball try-ball"></div>
-                <span>Add new website</span> 
+                <span>Add new website</span>
             </div>
             <div class="try-desc">
                 Try how this product works
@@ -165,8 +215,9 @@
                             <img src="assets/images/quote.svg" alt="">
                         </div>
                         <div class="review-text">
-                           It works so good! <br> 
-                           <span class="review-text--white"> And it is a must for my everyday development process. </span>
+                            It works so good! <br>
+                            <span class="review-text--white"> And it is a must for my everyday development process.
+                            </span>
                         </div>
                         <div class="review-author">
                             <div class="review-name">
@@ -184,11 +235,13 @@
                             <img src="assets/images/quote.svg" alt="">
                         </div>
                         <div class="review-text">
-                           It works so good! <br> 
-                           <span class="review-text--white"> And it is a must for my everyday development process a must for my everyday development process a must for my everyday development process. Hello world and new line </span>
+                            It works so good! <br>
+                            <span class="review-text--white"> And it is a must for my everyday development process a
+                                must for my everyday development process a must for my everyday development process.
+                                Hello world and new line </span>
                         </div>
                         <div class="review-author">
-                            <div class="review-name"> 
+                            <div class="review-name">
                                 Devid Test
                             </div>
                             <div class="review-position">
@@ -203,8 +256,9 @@
                             <img src="assets/images/quote.svg" alt="">
                         </div>
                         <div class="review-text">
-                           It works so good! <br> 
-                           <span class="review-text--white"> And it is a must for my everyday development process. </span>
+                            It works so good! <br>
+                            <span class="review-text--white"> And it is a must for my everyday development process.
+                            </span>
                         </div>
                         <div class="review-author">
                             <div class="review-name">
@@ -220,91 +274,103 @@
         </div>
     </div>
 
-    <div class="container-pricing" id="pricing">
-        <div class="pricing">
-            <div class="pricing-title">
-                <div class="ball pricing-ball"></div>
-                <span class="pricing-title__text">Flexible pricing</span>
-            </div>
-            <div class="pricing-cards">
-                <div class="pricing-card" id="pricingCard1">
-                    <div class="pricing-card__header"></div>
-                    <div class="pricing-card__title">
-                        Basic
+    <div class="container-fluid">
+        <img src="assets/images/bg-circle__pricing.png" alt="bg" class="bg-circle bg-circle__pricing pulsingAnim">
+        <div class="container-pricing" id="pricing">
+            <div class="pricing">
+                <div class="pricing-title">
+                    <span class="pricing-title__text">
+                        How many pages you`ll warm <span class="pricing-title__text_orange">per month</span>
+                    </span>
+                </div>
+                <div class="pricing-slider x3">
+                    <div class="pricing-range__values">
+                        <div class="pricing-range__value" id="rangeVal1">10K</div>
+                        <div class="pricing-range__value" id="rangeVal2">50K</div>
+                        <div class="pricing-range__value" id="rangeVal3">100K</div>
+                        <div class="pricing-range__value" id="rangeVal4">500K</div>
+                        <div class="pricing-range__value" id="rangeVal5">1M</div>
+                        <div class="pricing-range__value" id="rangeVal6">5M+</div>
                     </div>
-                    <div class="pricing-card__price">
-                        <div class="pricing-card__price-currency">$</div>
-                        <div class="pricing-card__price-value">5</div>
-                        <div class="pricing-card__price-term">/mo</div>
+                    <input type="range" class="pricing-range" value="3" min="1" max="6" step="1"
+                        onchange="rangeChange(this.value)">
+                </div>
+                <!-- <div class="pricing-slider__desc">
+                    How many pages you will warm per month?
+                </div> -->
+                <div class="pricing-cards">
+                    <div class="pricing-card" id="pricingCard1">
+                        <div class="pricing-card__header"></div>
+                        <div class="pricing-card__title">
+                            Basic
+                        </div>
+                        <div class="pricing-card__price">
+                            <div class="pricing-card__price-currency">$</div>
+                            <div class="pricing-card__price-value">5</div>
+                            <div class="pricing-card__price-term">/mo</div>
+                        </div>
+                        <ul class="pricing-card__list">
+                            <li class="pricing-card__list-item pricing-card__list-item--tick">Lorem ipsum dolor sit
+                                amet.</li>
+                            <li class="pricing-card__list-item pricing-card__list-item--tick">Lorem ipsum dolor sit.
+                            </li>
+                            <li class="pricing-card__list-item pricing-card__list-item--minus">Lorem amet sit amet.</li>
+                        </ul>
+                        <div class="pricing-card__button btn">
+                            <div class="btn-text">Get started</div>
+                            <img src="assets/images/arrow.svg" alt=">" class="btn-arrow">
+                        </div>
                     </div>
-                    <ul class="pricing-card__list">
-                        <li class="pricing-card__list-item pricing-card__list-item--tick">Lorem ipsum dolor sit amet.</li>
-                        <li class="pricing-card__list-item pricing-card__list-item--tick">Lorem ipsum dolor sit.</li>
-                        <li class="pricing-card__list-item pricing-card__list-item--minus">Lorem amet sit amet.</li>
-                    </ul>
-                    <div class="pricing-card__button btn">
-                        <div class="btn-text">Get started</div>
-                        <img src="assets/images/arrow.svg" alt=">" class="btn-arrow">
+                    <div class="pricing-card active" id="pricingCard2">
+                        <div class="pricing-card__header"></div>
+                        <div class="pricing-card__title">
+                            Bussiness
+                        </div>
+                        <div class="pricing-card__price">
+                            <div class="pricing-card__price-currency">$</div>
+                            <div class="pricing-card__price-value">20</div>
+                            <div class="pricing-card__price-term">/mo</div>
+                        </div>
+                        <ul class="pricing-card__list">
+                            <li class="pricing-card__list-item pricing-card__list-item--tick">Lorem ipsum dolor sit
+                                amet.</li>
+                            <li class="pricing-card__list-item pricing-card__list-item--tick">Lorem ipsum dolor sit.
+                            </li>
+                            <li class="pricing-card__list-item pricing-card__list-item--tick">Lorem ipsum amet.</li>
+                            <li class="pricing-card__list-item pricing-card__list-item--minus">Lorem ipsum dolor.</li>
+                            <li class="pricing-card__list-item pricing-card__list-item--minus">Lorem amet sit amet.</li>
+                        </ul>
+                        <div class="pricing-card__button btn">
+                            <div class="btn-text">Get started</div>
+                            <img src="assets/images/arrow.svg" alt=">" class="btn-arrow">
+                        </div>
+                    </div>
+                    <div class="pricing-card" id="pricingCard3">
+                        <div class="pricing-card__header"></div>
+                        <div class="pricing-card__title">
+                            Webmaster
+                        </div>
+                        <div class="pricing-card__price">
+                            <div class="pricing-card__price-currency">$</div>
+                            <div class="pricing-card__price-value">10</div>
+                            <div class="pricing-card__price-term">/mo</div>
+                        </div>
+                        <ul class="pricing-card__list">
+                            <li class="pricing-card__list-item pricing-card__list-item--tick">Lorem ipsum dolor sit
+                                amet.</li>
+                            <li class="pricing-card__list-item pricing-card__list-item--tick">Lorem ipsum dolor sit.
+                            </li>
+                            <li class="pricing-card__list-item pricing-card__list-item--tick">Lorem ipsum amet.</li>
+                            <li class="pricing-card__list-item pricing-card__list-item--minus">Lorem ipsum dolor.</li>
+                            <li class="pricing-card__list-item pricing-card__list-item--minus">Lorem amet sit amet.</li>
+                        </ul>
+                        <div class="pricing-card__button btn">
+                            <div class="btn-text">Get started</div>
+                            <img src="assets/images/arrow.svg" alt=">" class="btn-arrow">
+                        </div>
                     </div>
                 </div>
-                <div class="pricing-card active" id="pricingCard2">
-                    <div class="pricing-card__header"></div>
-                    <div class="pricing-card__title">
-                        Bussiness
-                    </div>
-                    <div class="pricing-card__price">
-                        <div class="pricing-card__price-currency">$</div>
-                        <div class="pricing-card__price-value">20</div>
-                        <div class="pricing-card__price-term">/mo</div>
-                    </div>
-                    <ul class="pricing-card__list">
-                        <li class="pricing-card__list-item pricing-card__list-item--tick">Lorem ipsum dolor sit amet.</li>
-                        <li class="pricing-card__list-item pricing-card__list-item--tick">Lorem ipsum dolor sit.</li>
-                        <li class="pricing-card__list-item pricing-card__list-item--tick">Lorem ipsum amet.</li>
-                        <li class="pricing-card__list-item pricing-card__list-item--minus">Lorem ipsum dolor.</li>
-                        <li class="pricing-card__list-item pricing-card__list-item--minus">Lorem amet sit amet.</li>
-                    </ul>
-                    <div class="pricing-card__button btn">
-                        <div class="btn-text">Get started</div>
-                        <img src="assets/images/arrow.svg" alt=">" class="btn-arrow">
-                    </div>
-                </div>
-                <div class="pricing-card" id="pricingCard3">
-                    <div class="pricing-card__header"></div>
-                    <div class="pricing-card__title">
-                        Webmaster
-                    </div>
-                    <div class="pricing-card__price">
-                        <div class="pricing-card__price-currency">$</div>
-                        <div class="pricing-card__price-value">10</div>
-                        <div class="pricing-card__price-term">/mo</div>
-                    </div>
-                    <ul class="pricing-card__list">
-                        <li class="pricing-card__list-item pricing-card__list-item--tick">Lorem ipsum dolor sit amet.</li>
-                        <li class="pricing-card__list-item pricing-card__list-item--tick">Lorem ipsum dolor sit.</li>
-                        <li class="pricing-card__list-item pricing-card__list-item--tick">Lorem ipsum amet.</li>
-                        <li class="pricing-card__list-item pricing-card__list-item--minus">Lorem ipsum dolor.</li>
-                        <li class="pricing-card__list-item pricing-card__list-item--minus">Lorem amet sit amet.</li>
-                    </ul>
-                    <div class="pricing-card__button btn">
-                        <div class="btn-text">Get started</div>
-                        <img src="assets/images/arrow.svg" alt=">" class="btn-arrow">
-                    </div>
-                </div>
-            </div>
-            <div class="pricing-slider x3">
-                <div class="pricing-range__values">
-                    <div class="pricing-range__value" id="rangeVal1">10K</div>
-                    <div class="pricing-range__value" id="rangeVal2">50K</div>
-                    <div class="pricing-range__value" id="rangeVal3">100K</div>
-                    <div class="pricing-range__value" id="rangeVal4">500K</div>
-                    <div class="pricing-range__value" id="rangeVal5">1M</div>
-                    <div class="pricing-range__value" id="rangeVal6">5M+</div>
-                </div>
-                <input type="range" class="pricing-range" value="3" min="1" max="6" step="1" onchange="rangeChange(this.value)">
-            </div>
-            <div class="pricing-slider__desc">
-                How many pages you will warm per month?
+
             </div>
         </div>
     </div>
@@ -313,7 +379,7 @@
         <div class="try try-end">
             <div class="try-title">
                 <div class="ball try-ball"></div>
-                <span>Start saving your time <span class="try-orange">now</span> </span> 
+                <span>Start saving your time <span class="try-orange">now</span> </span>
             </div>
             <div class="try-desc">
                 Sign up today and you`ll have more free minutes in your life :)
@@ -351,7 +417,7 @@
                     2020. All rights reserved.
                 </div>
                 <div target="_blank" href="crayfish.studio" class="footer-copyright__crayfish"></a>
-                    Designed by <a target="_blank" href="https://crayfish.studio/">Crayfish</a> 
+                    Designed by <a target="_blank" href="https://crayfish.studio/">Crayfish</a>
                 </div>
             </div>
         </div>
@@ -364,4 +430,5 @@
     <script src="scripts/counter.js"></script>
     <script src="scripts/main.js"></script>
 </body>
+
 </html>

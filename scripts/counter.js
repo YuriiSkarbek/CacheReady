@@ -274,7 +274,7 @@ let values3 = new CountUp('values3', 6.0, optionsVal3);
 
 let userScreen = $(window).height();
 
-let boxCounter = $('.counter').offset().top + 100;
+let boxCounter = $('.counter').offset().top;
 let counterDone = false;
 
 let valuesCounter = $('.values').offset().top + 100;
