@@ -240,7 +240,7 @@ var CountUp = /** @class */ (function () {
 
 const options = {
     startVal: 1888000,
-    duration: 2.5,
+    duration: 3.5,
     separator: ' ',
 };
 let counter = new CountUp('counter', 1890789, options);

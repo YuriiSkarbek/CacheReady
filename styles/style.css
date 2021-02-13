@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     background-color: #F9F9F9;
+    overflow-x: hidden;
 }
 
 .container,
@@ -58,20 +59,62 @@
     }
 }
 
-.bg-circle {
+.bg-circle__container {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     pointer-events: none;
+    width: 100%;
+    height: 1130px;
+    z-index: -100;
+}
+
+.bg-circle{
+    background: transparent;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.bg-circle__inner{
+    width: 467px;
+    height: 467px;
+    border-color: rgba(255, 173, 1, 0.16);
+}
+
+.bg-circle__middle1{
+    width: 754px;
+    height: 754px;
+    border-color: rgba(255, 217, 136, 0.87);;
+}
+
+.bg-circle__middle2{
+    width: 826px;
+    height: 826px;
+    border-color: rgba(255, 184, 0, 0.17);
+}
+
+.bg-circle__outer{
+    width: 1130px;
+    height: 1130px;
+    border-color: #FFF1D2;
 }
 
 .bg-circle__banner {
-    top: -110px;
-    left: -5%;
-    width: 105%;
+    top: -214px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 1130px;
     transform-origin: center center;
 }
 
 .bg-circle__pricing {
-    right: 0;
+    right: -5%;
     top: 50%;
     height: 800px;
     width: auto;
@@ -81,12 +124,27 @@
 }
 
 .bg-circle__features {
-    left: 0;
+    left: -5%;
     top: 0;
     height: 715px;
     width: auto;
     transform-origin: center left;
 
+}
+
+.bg-circle__features .bg-circle__inner{
+    width: 410px;
+    height: 410px;
+}
+
+.bg-circle__features .bg-circle__middle1{
+    width: 650px;
+    height: 650px;
+}
+
+.bg-circle__features .bg-circle__middle1{
+    width: 715px;
+    height: 715px;
 }
 
 .pulsingAnim {
@@ -118,19 +176,19 @@
 
 @keyframes pulsing {
     0% {
-        -webkit-transform: scale(1.0, 1.0);
-        transform: scale(1.0, 1.0);
+        -webkit-transform: translate(-50%, 0%) scale(1.0, 1.0);
+        transform: translate(-50%, 0%) scale(1.0, 1.0);
     }
 
     50% {
-        -webkit-transform: scale(1.15, 1.15);
-        transform: scale(1.15, 1.15);
+        -webkit-transform: translate(-50%, 0%) scale(1.1, 1.1);
+        transform: translate(-50%, 0%) scale(1.1, 1.1);
         opacity: .9
     }
 
     100% {
-        -webkit-transform: scale(1.0, 1.0);
-        transform: scale(1.0, 1.0);
+        -webkit-transform: translate(-50%, 0%) scale(1.0, 1.0);
+        transform: translate(-50%, 0%) scale(1.0, 1.0);
     }
 }
 
@@ -229,7 +287,7 @@ box-shadow: 0px 7px 23px 0px rgba(241,96,0,0.35);
 }
 
 .btn:hover .btn-arrow{
-    transform: translateX(10px);
+    transform: translateX(4px);
 }
 
 .btn-text {
