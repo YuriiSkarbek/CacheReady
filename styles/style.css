@@ -52,12 +52,137 @@
 }
 
 @media (min-width: 1400px) {
-
     .container,
     .container-pricing {
         max-width: 1220px;
     }
 }
+
+.pulsingAnim {
+    -webkit-animation-name: pulsing;
+    -moz-animation-name: pulsing;
+    -ms-animation-name: pulsing;
+    -o-animation-name: pulsing;
+    animation-name: pulsing;
+    -webkit-animation-duration: 4000ms;
+    -moz-animation-duration: 4000ms;
+    -ms-animation-duration: 4000ms;
+    -o-animation-duration: 4000ms;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -ms-animation-play-state: running;
+    -o-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite
+}
+
+@keyframes pulsing {
+    0% {
+        -webkit-transform: translate(-50%, -50%) scale(1.0, 1.0);
+        transform: translate(-50%, -50%) scale(1.0, 1.0);
+    }
+
+    50% {
+        -webkit-transform: translate(-50%, -50%) scale(1.1, 1.1);
+        transform: translate(-50%, -50%) scale(1.1, 1.1);
+        opacity: .9
+    }
+
+    100% {
+        -webkit-transform: translate(-50%, -50%) scale(1.0, 1.0);
+        transform: translate(-50%, -50%) scale(1.0, 1.0);
+    }
+}
+
+@keyframes pulsingCircleInner {
+    0% {
+        -webkit-transform: translate(-50%, -50%) scale(1.0, 1.0);
+        transform: translate(-50%, -50%) scale(1.0, 1.0);
+        opacity: .9
+    }
+
+    50% {
+        -webkit-transform: translate(-50%, -50%) scale(1.3, 1.3);
+        transform: translate(-50%, -50%) scale(1.3, 1.3);
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform: translate(-50%, -50%) scale(1.0, 1.0);
+        transform: translate(-50%, -50%) scale(1.0, 1.0);
+        opacity: .9
+    }
+}
+
+@keyframes pulsingCircleMiddle1 {
+    0% {
+        -webkit-transform: translate(-50%, -50%) scale(1.0, 1.0);
+        transform: translate(-50%, -50%) scale(1.0, 1.0);
+        opacity: .9
+    }
+
+    50% {
+        -webkit-transform: translate(-50%, -50%) scale(1.12, 1.12);
+        transform: translate(-50%, -50%) scale(1.12, 1.12);
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform: translate(-50%, -50%) scale(1.0, 1.0);
+        transform: translate(-50%, -50%) scale(1.0, 1.0);
+        opacity: .9
+    }
+}
+
+@keyframes pulsingCircleMiddle2 {
+    0% {
+        -webkit-transform: translate(-50%, -50%) scale(1.0, 1.0);
+        transform: translate(-50%, -50%) scale(1.0, 1.0);
+        opacity: .9
+    }
+
+    50% {
+        -webkit-transform: translate(-50%, -50%) scale(1.18, 1.18);
+        transform: translate(-50%, -50%) scale(1.18, 1.18);
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform: translate(-50%, -50%) scale(1.0, 1.0);
+        transform: translate(-50%, -50%) scale(1.0, 1.0);
+        opacity: .9
+    }
+}
+
+@keyframes pulsingCircleOuter {
+    0% {
+        -webkit-transform: translate(-50%, -50%) scale(1.0, 1.0);
+        transform: translate(-50%, -50%) scale(1.0, 1.0);
+        opacity: .9
+    }
+
+    50% {
+        -webkit-transform: translate(-50%, -50%) scale(1.1, 1.1);
+        transform: translate(-50%, -50%) scale(1.1, 1.1);
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform: translate(-50%, -50%) scale(1.0, 1.0);
+        transform: translate(-50%, -50%) scale(1.0, 1.0);
+        opacity: .9
+    }
+}
+
 
 .bg-circle__container {
     position: absolute;
@@ -85,24 +210,44 @@
     width: 467px;
     height: 467px;
     border-color: rgba(255, 173, 1, 0.16);
+    -webkit-animation-name: pulsingCircleInner;
+    -moz-animation-name: pulsingCircleInner;
+    -ms-animation-name: pulsingCircleInner;
+    -o-animation-name: pulsingCircleInner;
+    animation-name: pulsingCircleInner;
 }
 
 .bg-circle__middle1{
     width: 754px;
     height: 754px;
-    border-color: rgba(255, 217, 136, 0.87);;
+    border-color: rgba(255, 217, 136, 0.87);
+    -webkit-animation-name: pulsingCircleMiddle1;
+    -moz-animation-name: pulsingCircleMiddle1;
+    -ms-animation-name: pulsingCircleMiddle1;
+    -o-animation-name: pulsingCircleMiddle1;
+    animation-name: pulsingCircleMiddle1;
 }
 
 .bg-circle__middle2{
     width: 826px;
     height: 826px;
     border-color: rgba(255, 184, 0, 0.17);
+    -webkit-animation-name: pulsingCircleMiddle2;
+    -moz-animation-name: pulsingCircleMiddle2;
+    -ms-animation-name: pulsingCircleMiddle2;
+    -o-animation-name: pulsingCircleMiddle2;
+    animation-name: pulsingCircleMiddle2;
 }
 
 .bg-circle__outer{
     width: 1130px;
     height: 1130px;
     border-color: #FFF1D2;
+    -webkit-animation-name: pulsingCircleOuter;
+    -moz-animation-name: pulsingCircleOuter;
+    -ms-animation-name: pulsingCircleOuter;
+    -o-animation-name: pulsingCircleOuter;
+    animation-name: pulsingCircleOuter;
 }
 
 .bg-circle__banner {
@@ -147,50 +292,6 @@
     height: 715px;
 }
 
-.pulsingAnim {
-    -webkit-animation-name: pulsing;
-    -moz-animation-name: pulsing;
-    -ms-animation-name: pulsing;
-    -o-animation-name: pulsing;
-    animation-name: pulsing;
-    -webkit-animation-duration: 4000ms;
-    -moz-animation-duration: 4000ms;
-    -ms-animation-duration: 4000ms;
-    -o-animation-duration: 4000ms;
-    -webkit-animation-timing-function: ease-in-out;
-    -moz-animation-timing-function: ease-in-out;
-    -ms-animation-timing-function: ease-in-out;
-    -o-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-play-state: running;
-    -moz-animation-play-state: running;
-    -ms-animation-play-state: running;
-    -o-animation-play-state: running;
-    animation-play-state: running;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -ms-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    animation-iteration-count: infinite
-}
-
-@keyframes pulsing {
-    0% {
-        -webkit-transform: translate(-50%, 0%) scale(1.0, 1.0);
-        transform: translate(-50%, 0%) scale(1.0, 1.0);
-    }
-
-    50% {
-        -webkit-transform: translate(-50%, 0%) scale(1.1, 1.1);
-        transform: translate(-50%, 0%) scale(1.1, 1.1);
-        opacity: .9
-    }
-
-    100% {
-        -webkit-transform: translate(-50%, 0%) scale(1.0, 1.0);
-        transform: translate(-50%, 0%) scale(1.0, 1.0);
-    }
-}
 
 .header {
     height: 85px;
