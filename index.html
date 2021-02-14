@@ -181,7 +181,10 @@
                 Try how this product works
             </div>
             <form class="try-form">
-                <input type="text" class="try-form__text" placeholder="website-example.com">
+                <label class="input-domain__container">
+                    <input type="text" class="input-domain try-form__text" placeholder="website-example.com" onkeyup="this.setAttribute('value', this.value);">
+                    <div class="input-domain__msg">Invalid domain</div>
+                </label>
                 <div class="btn">
                     <div class="btn-text">Add</div>
                     <img src="assets/images/arrow.svg" alt=">" class="btn-arrow">

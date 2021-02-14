@@ -391,6 +391,11 @@ box-shadow: 0px 7px 23px 0px rgba(241,96,0,0.35);
     transform: translateX(4px);
 }
 
+.btn.disabled{
+    opacity: .3;
+    pointer-events: none;
+}
+
 .btn-text {
     font-weight: bold;
     font-size: 18px;
@@ -544,27 +549,93 @@ box-shadow: 0px 7px 23px 0px rgba(241,96,0,0.35);
     width: 50%;
 }
 
-.try-form__text {
-    font-weight: normal;
+.input-domain__container{
+    margin-right: 14px;
+    position: relative;
     flex: 1 0 auto;
+}
+
+.input-domain__container::before{
+    content: '!';
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #970000;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    position: absolute;
+    right: 14px;
+    top: 12px;
+    text-align: center;
+    transition: .4s;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.input-domain__container.invalid::before{
+    opacity: 1;
+}
+
+
+.input-domain {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-weight: normal;
     font-size: 17px;
     line-height: 20px;
     color: #272727;
     padding-left: 32px;
-    margin-right: 14px;
-    border: 2px solid #1E1E20;
+    border: 2px solid #B6B6BE;
     border-radius: 27px;
     background-color: transparent;
+    transition: .4s;
 }
 
-.try-form__text,
-.try-form__text:focus {
+.input-domain:not([value=""]):not(:focus):invalid{
+    background-color: red;
+}
+
+.input-domain,
+.input-domain:focus {
     outline: none;
 }
 
-.try-form__text::placeholder {
+.input-domain:focus{
+    border: 2px solid #F16000;
+    color: #16161B;
+}
+
+.input-domain::placeholder {
     color: #838383;
 }
+
+.invalid .input-domain{
+    border: 2px solid #970000;
+}
+
+
+.input-domain__msg{
+    position: absolute;
+    left: 32px;
+    top: 64px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #970000;
+    opacity: 0;
+    pointer-events: none;
+    transition: .4s;
+}
+
+.invalid .input-domain__msg{
+    opacity: 1;
+    pointer-events: auto;
+}
+
 
 .values {
     display: flex;

@@ -134,6 +134,33 @@ $('.pricing-range__value').click(function () {
   rangeChange(currentNum);
 })
 
+
+// input validation
+$('.input-domain').change(function () {
+  // if validation true
+  if (CheckIsValidDomain($(this).val())) {
+    if ($(this).parent().hasClass('invalid')) {
+      $(this).parent().removeClass('invalid');
+      $(this).parent().parent().find('.btn').removeClass('disabled');
+    }
+  } 
+  // if validation false
+  else {
+    if (!$(this).parent().hasClass('invalid')) {
+      $(this).parent().addClass('invalid');
+      $(this).parent().parent().find('.btn').addClass('disabled');
+    }
+  }
+});
+
+function CheckIsValidDomain(domain) {
+  let domainArr = domain.split();
+  // var re = new RegExp(/^(([a-zA-Z]{1})|([a-zA-Z]{1}[a-zA-Z]{1})|([a-zA-Z]{1}[0-9]{1})|([0-9]{1}[a-zA-Z]{1})|([a-zA-Z0-9][a-zA-Z0-9-_]{1,61}[a-zA-Z0-9]))\.([a-zA-Z]{2,6}|[a-zA-Z0-9-]{2,30}\.[a-zA-Z]{2,3})$/);
+  var re = new RegExp(/^(?:https?:\/\/)?(?:[^.]+\.)?([a-zA-Z0-9][a-zA-Z0-9-_]{1,61}[a-zA-Z0-9])\.([a-zA-Z]{2,6}|[a-zA-Z0-9-]{2,30}\.[a-zA-Z]{2,3})\/*$/);
+  return domain.match(re);
+}
+
+
 // test query to wp 
 
 // const WPQL_QUERY = {
